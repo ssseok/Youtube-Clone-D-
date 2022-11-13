@@ -31,7 +31,7 @@ export default function Header() {
           type="text"
           onChange={handleChange}
           value={text}
-          placeholder="Search..."
+          placeholder="검색"
         />
         <button className="bg-zinc-600 p-4">
           <BsSearch />

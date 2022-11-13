@@ -13,8 +13,7 @@ export default function Videos() {
   } = useQuery(["videos", keyword], () => youtube.search(keyword));
 
   return (
-    <main>
-      Video{keyword ? `🔍${keyword}` : `🔥`}
+    <>
       {isLoading && <p>Loading...</p>}
       {error && <p>error...</p>}
       {videos && (
@@ -24,6 +23,6 @@ export default function Videos() {
           ))}
         </ul>
       )}
-    </main>
+    </>
   );
 }
